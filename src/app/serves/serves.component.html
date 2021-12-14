@@ -9,8 +9,6 @@
 
 <!-- <p> {{serverCreationStatus}} </p> -->
 
-<p *ngIf="serverCreated; else serve"> {{serverCreationStatus}} </p>
+<p *ngIf="serverCreated"> {{serverCreationStatus}} </p>
 
-<ng-template #serve>
-    <p>no server was created</p>
-</ng-template>
+<app-server *ngFor="let dumm of dummyArray"></app-server>

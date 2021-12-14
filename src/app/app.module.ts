@@ -8,6 +8,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { FormsModule } from '@angular/forms';
 import { PracticeComponent } from './practice/practice.component';
+import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PracticeComponent } from './practice/practice.component';
     ServesComponent,
     WarningAlertComponent,
     SuccessAlertComponent,
-    PracticeComponent
+    PracticeComponent,
+    DirectivedemoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,10 @@
+<p>directivedemo works!</p>
+
+<button (click)="displayDetail()" >Display Details</button>
+
+<p *ngIf="!detail"> Secret password = 'tuna'</p>
+
+<p *ngFor="let item of log"
+    [ngStyle]="{backgroundColor: item >= 5 ? 'blue' : 'transparent'}"
+    [ngClass]="{logItem: item >= 5}"
+>{{ item }}</p>
