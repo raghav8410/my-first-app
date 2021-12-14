@@ -1,3 +1,4 @@
 <!-- <p> {{"this"}} is from {{server}} {{setComponent()}}. </p> -->
 
-<p [ngStyle]="{backgroundColor: getColor()}"> {{ serverStatus }}</p>
+<p [ngStyle]="{backgroundColor: getColor()}"
+    [ngClass]="{ online: serverStatus === 'online'}"> {{ serverStatus }}</p>

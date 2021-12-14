@@ -2,18 +2,16 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-server',
-    templateUrl: '../server/server.component.html'
+    templateUrl: '../server/server.component.html',
+    styleUrls: ['../server/server.component.css']
 }) 
 export class ServerComponent{
 
     server: number = 10;
     serverStatus: string = 'offline';
-    randomValue : number ;
 
     constructor(){
-        this.randomValue = Math.random();
-        console.log(this.randomValue);
-        this.serverStatus = this.randomValue > 0.5 ? 'online' : 'offline';
+        this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
     }
 
     setComponent(){
